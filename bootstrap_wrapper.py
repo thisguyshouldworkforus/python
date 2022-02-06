@@ -251,7 +251,7 @@ try:
         urllib.request.urlretrieve(download, '/root/' + file_name)
         os.system("bash -c 'chown root:root /root/bootstrap.py'")
         os.system("bash -c 'chmod 0755 /root/bootstrap.py'")
-        os.system('/usr/bin/python2 /root/bootstrap.py --login=bootstrap --server=' + SERVER + ' --download-method=https --organization=Early_Warning_Services_LLC --location=satellite.ews.int --activationkey=' + ACTIVATIONKEY + ' --skip foreman --force')
+        os.system('/usr/bin/python2 /root/bootstrap.py --login=bootstrap --server=' + SERVER + ' --download-method=https --organization=SBATC_LLC --location=int.snyderfamily.co --activationkey=' + ACTIVATIONKEY + ' --skip foreman --force')
     else:
         print(RED_TEXT + 'There was an error trying to reach\n\t' + connection + 'Please review this error before continuing' + NORMAL_TEXT + '\n\n')
         exit(1)
